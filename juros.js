@@ -33,7 +33,7 @@ function calcular() {
     let mtaxa = ((((taxa / 100) + 1) ** (1 / 12)) - 1) * 100
     let brl = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
     let mbrl = mensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
-    let ano
+    let ano = ''
     
 
     if(tempo === 1) {
