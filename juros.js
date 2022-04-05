@@ -37,9 +37,9 @@ function calcular() {
     
 
     if(tempo === 1) {
-       let ano = "ano"
+       ano = "ano"
     } else {
-       let ano = "anos" 
+       ano = "anos" 
     }
     
     let totala = (((taxa / 100) + 1) ** tempo) * valor
