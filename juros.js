@@ -33,8 +33,9 @@ function calcular() {
     let mtaxa = ((((taxa / 100) + 1) ** (1 / 12)) - 1) * 100
     let brl = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
     let mbrl = mensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    
 
-    if(tempo == 1) {
+    if(tempo === 1) {
        let ano = "ano"
     } else {
        let ano = "anos" 
@@ -55,7 +56,7 @@ function calcular() {
     let totapojurbrl = totapojur.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
     let totbrl = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
-    if ( valor == 0 && mensal == 0) {
+    if ( valor === 0 && mensal === 0) {
        window.alert(`Para obter o resultado, você precisa prencher um valor válido de aporte inicial ou mensal, ou ambos.`)
     } else if ( valor < 0  ) {
        window.alert(`Insira um valor válido para o aporte inicial.`)
@@ -65,12 +66,12 @@ function calcular() {
        window.alert(`Para obter o resultado, você precisa informar um período válido para o seu investimento.`)
     } else if ( taxa <= 0 ) {
        window.alert(`Para obter o resultado, você precisa informar um valor válido para a taxa anual do seu investimento.`)
-    } else if ( valor !=0 && mensal == 0) {
+    } else if ( valor !=0 && mensal === 0) {
       res.innerHTML = `<p>Se você fizer um aporte único de ${brl} à uma taxa anual de ${taxa}%, ao fim de ${tempo} ${ano} você vai ter acumulado o total de ${totbrl}.</p>
       <p>Valor investido: ${brl}</p><p>Valor recebido em juros: ${apounjurbrl}</p> `
       reset.innerHTML = "Reiniciar Calculadora"
       res.appendChild(reset)
-    } else if ( valor == 0 && mensal != 0 ) {
+    } else if ( valor === 0 && mensal != 0 ) {
       res.innerHTML = `<p>Se você fizer aportes mensais de ${mbrl} à uma taxa anual de ${taxa}%, ao fim de ${tempo} ${ano} você vai ter acumulado o total de ${totbrl}.</p>
       <p>Valor investido: ${totmenbrl}</p><p>Valor recebido em juros: ${apomenjurbrl}</p>`
       reset.innerHTML = "Reiniciar Calculadora"
