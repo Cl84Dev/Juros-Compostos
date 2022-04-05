@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora da Riqueza</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section>
+    <h1>Calculadora da Riqueza</h1>
+    <div>
+        <p>Juros compostos têm um poder incrível! Comprove entrando com os valores abaixo:</p>
+        <p><label for="valor">Aporte Inicial: R$</label> <input type="number" id="valor"></p>
+        <p><label for="men">Aporte Mensal: R$</label> <input type="number" id="men"></p>
+        <p>Período (anos): <input type="number" id="tempo"></p>
+        <p>Taxa Anual: <input type="number" id="taxa"> %</p>
+        <p><input type="button" value="Calcular" id="but" onclick="calcular()"></p>
+    </div>
+    <div id="res"></div>
+    <div id="deta"></div>
+    </section>
+    
+    
+</body>
+<footer>&copy;ClFinance</footer>
+<script src="juros.js"></script>
+</html>
