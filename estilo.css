@@ -1,6 +1,4 @@
 body {
-    height: 100vh;
-    width: 100vh;
     background-image: linear-gradient(to right, white, rgb(40, 120, 212));
     font: normal 15pt Arial;
 }
@@ -27,7 +25,6 @@ h1 {
 
 div {
     text-align: center;
-    margin: auto;
 }
 
 input {
