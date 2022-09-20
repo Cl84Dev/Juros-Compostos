@@ -1,26 +1,26 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora da Riqueza</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <header><h1>Calculadora da Riqueza</h1></header>
     <main>
-    <h1>Calculadora da Riqueza</h1>
-    <div>
-        <p>Juros compostos têm um poder incrível! Comprove entrando com os valores abaixo:</p>
-        <p><label for="valor">Aporte Inicial: R$</label><input type="number" id="aporteInicial"></p>
-        <p><label for="men">Aporte Mensal: R$</label><input type="number" id="aporteMensal"></p>
-        <p>Período (anos): <input type="number" id="periodo"></p>
-        <p>Taxa Anual: <input type="number" id="taxaAnual"> %</p>
-        <p><input type="button" value="Calcular" id="but" onclick="calcular()"></p>
-    </div>
-    <div id="res"></div>
-</main>
+        <div>
+            <p>Juros compostos têm um poder incrível! Comprove entrando com os valores abaixo:</p>
+            <p><label for="valor">Aporte Inicial: R$</label><input type="number" id="aporteInicial"></p>
+            <p><label for="men">Aporte Mensal: R$</label><input type="number" id="aporteMensal"></p>
+            <p>Período (anos): <input type="number" id="periodo"></p>
+            <p>Taxa Anual: <input type="number" id="taxaAnual"> %</p>
+            <p><input type="button" value="Calcular" id="calcular"></p>
+        </div>
+        <div id="res"></div>
+    </main>
 </body>
 <footer>&copy;Cl84Dev</footer>
-<script src="juros.js"></script>
 </html>
