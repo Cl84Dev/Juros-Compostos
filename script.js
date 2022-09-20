@@ -4,12 +4,15 @@ function calcular() {
     let periodo = Number(document.getElementById('periodo').value)
     let taxaAnual = Number(document.getElementById('taxaAnual').value)
     let taxaMensal = ((((taxaAnual / 100) + 1) ** (1 / 12)) - 1) * 100
+    let botaoDeCalcular = document.createElement('calcular')
     let reset = document.createElement('button')
     let result = document.getElementById('res')
     let ano = ""
     reset.id = 'reset'
+    botaoDeCalcular.disabled = true
 
     reset.onclick = function() {
+      botaoDeCalcular.disabled = false
       document.getElementById('aporteInicial').value = ''
       document.getElementById('aporteMensal').value = ''
       document.getElementById('periodo').value = ''
