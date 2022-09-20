@@ -9,7 +9,6 @@ function calcular() {
     let result = document.getElementById('res')
     let ano = ""
     reset.id = 'reset'
-    botaoDeCalcular.disabled = true
 
     reset.onclick = function() {
       botaoDeCalcular.disabled = false
@@ -58,6 +57,7 @@ function calcular() {
       }
 
     }
+    botaoDeCalcular.disabled = true
     
 }
 
