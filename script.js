@@ -1,4 +1,4 @@
-function calcular() {
+7function calcular() {
     let aporteInicial = Number(document.getElementById('aporteInicial').value)
     let aporteMensal = Number(document.getElementById('aporteMensal').value)
     let periodo = Number(document.getElementById('periodo').value)
@@ -44,20 +44,23 @@ function calcular() {
         <p>Valor investido: ${aporteInicial.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p><p>Valor recebido em juros: ${recebidoEmJurosSobreAporteInicial.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p> `
         reset.innerHTML = "Reiniciar Calculadora"
         result.appendChild(reset)
+        botaoDeCalcular.disabled = true
       } else if ( aporteInicial == 0 && aporteMensal != 0 ) {
         result.innerHTML = `<h2>Resultado</h2><p>Se você fizer aportes mensais de ${aporteMensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} à uma taxa anual de ${taxaAnual}%, ao fim de ${periodo} ${ano} você vai ter acumulado o total de ${rendimentoTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}.</p>
         <p>Valor investido: ${totalDeAportesMensais.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p><p>Valor recebido em juros: ${recebidoEmJurosSobreAportesMensais.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>`
         reset.innerHTML = "Reiniciar Calculadora"
         result.appendChild(reset)
+        botaoDeCalcular.disabled = true
       } else {
         result.innerHTML = `<h2>Resultado</h2><p>Se você fizer um aporte inicial de ${aporteInicial.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} e aportes mensais de ${aporteMensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} a uma taxa anual de ${taxaAnual}%, ao fim de ${periodo} ${ano} você vai ter acumulado o total de ${rendimentoTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}.</p>
         <p>Valor investido: ${aporteTotal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p><p>Valor recebido em juros: ${totalInvestido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>`
         reset.innerHTML = "Reiniciar Calculadora"
         result.appendChild(reset)
+        botaoDeCalcular.disabled = true
       }
 
     }
-    botaoDeCalcular.disabled = true
+    
     
 }
 
