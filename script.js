@@ -1,4 +1,4 @@
-7function calcular() {
+function calcular() {
     let aporteInicial = Number(document.getElementById('aporteInicial').value)
     let aporteMensal = Number(document.getElementById('aporteMensal').value)
     let periodo = Number(document.getElementById('periodo').value)
