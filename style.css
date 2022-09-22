@@ -3,13 +3,12 @@ body {
     margin: 0px;
     background-image: linear-gradient(to right, white, rgb(40, 120, 212));
     font: normal 15pt Arial;
-
+    text-align: center;
 }
 
 header {
     background-color: white;
     text-align: center;
-
 }
 
 main {
@@ -19,15 +18,6 @@ main {
     width: 290px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
-
-}
-
-h1 {
-    text-align: center;
-}
-
-div {
-    text-align: center;
 }
 
 input {
@@ -60,14 +50,9 @@ button#reset {
     text-align: center;
 }
 
-div#res {
-    text-align: center;
-}
-
 footer {
     background-color: rgb(40, 120, 212);
     margin-top: 10px;
     color: white;
-    text-align: center;
     font-style: italic;
 }
